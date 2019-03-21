@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">	
+    </script>
+
+	<script type="text/javascript">
+		function table()
+		{
+			var a=document.form.f_number.value;
+			if(a==""||a=="null"){
+				alert("PLZZ ENTER Number");
+				document.form.f_number.focus;
+				return false;
+			}
+
+			var a=document.getElementById('f').value;
+			for(var i=0;i<=10;i++) 
+			{
+				var c=a*i;
+				document.getElementById('r').innerHTML+= a+'*'+i+'='+c+"<br>";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="form-group">
+			<div class="col-lg-6">
+				<form name="form" action="#">
+			 		NUMBER:
+					<input type="number" name="f_number" id="f" class="form-control" autofocus><br>
+
+				</form>
+				<button onclick="table()">Print</button>
+
+				<h3 id="r"></h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

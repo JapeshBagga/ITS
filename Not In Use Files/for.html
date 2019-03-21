@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+</head>
+<body>
+	<form action="#" method="post">
+		NAME:
+		<input type ="text" name="name">
+		EMAIL:
+		<input type="email" name="email">
+		<input type="submit" name="register">
+		<?php
+			$a=$_POST['name'];
+			$b=$_POST['email'];
+			echo'<h2>WELCOME $a TO MY PAGE<br>YOUR EMAIL IS $b</h2>';
+		?>
+	</form>
+</body>
+</html>

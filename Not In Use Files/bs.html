@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		img:hover{
+			border:2px solid blue;
+			transition-property: width,height;
+    		transition-duration: 3s;
+    		 width: 400px;
+    		height: 200px;
+		}
+		.bg{
+			background-color: lightgrey;
+		}
+	</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bg">
+
+<!-- Nav-->
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">LOGO</a>
+		</div>
+		<ul class="collapse navbar-collapse">
+			<li><a href="#" class="glyphicon glyphicon-info-sign"> About-Us</a></li>
+			<li><a href="#" class="glyphicon glyphicon-phone"> Contact</a></li>
+			<li><a href="#" class="glyphicon glyphicon-home"> Home </a></li>
+			<li><a href="#" class="glyphicon glyphicon-headphones"> Social</a></li>
+		</ul>
+	</nav>
+</div>
+
+<!--Slider-->
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item ">
+        <img src="0.jpg" class="img-rounded" style="width:100%;">
+      </div>
+
+      <div class="item active">
+       	<img src="1.jpg" class="img-rounded" style="width:100%">
+      </div>
+    
+      <div class="item">
+        <img src="2.jpg" class="img-rounded" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+
+  </div>
+</div>
+
+<!-- -->
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="11.jpg" height="100px" width="200px" class="img-thumbnail"><br>
+			This Is a First Image
+		</div>
+		<div class="col-md-3">
+			<img src="22.jpg" height="100px" width="200px" class="img-thumbnail"><br>
+			This Is a Secound Image
+		</div>
+		<div class="col-md-3">
+			<img src="33.jpg" height="100px" width="200px" class="img-thumbnail"><br>
+			This Is a Third Image
+		</div>
+		<div class="col-md-3">
+			<img src="44.jpg" height="100px" width="200px" class="img-thumbnail"><br>
+			This Is a Fourth Image
+		</div>
+	</div>
+</div>
+</body>
+</html>

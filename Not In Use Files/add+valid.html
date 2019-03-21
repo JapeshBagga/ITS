@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">	
+    </script>
+
+	<script type="text/javascript">
+		function addition(){
+			var a=document.form.f_number.value;
+			if(a==""||a=="null"){
+				alert("PLZZ ENTER N");
+				document.form.f_number.focus;
+				return false;
+			}
+			var b=document.form.s_number.value;
+			if(b==""||b=="null"){
+				alert("PLZZ ENTER NUMBER");
+				document.form.f_number.focus;
+				return false;
+			}
+			var a=parseInt(document.getElementById('f').value);
+			var b=parseInt(document.getElementById('s').value);
+			var c=a+b;
+			document.getElementById('r').innerHTML=c;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="form-group">
+			<div class="col-lg-6">
+			<form name="form" action="#">
+			 FIRST-NUMBER:
+			<input type="number" name="f_number" id="f" class="form-control" autofocus>
+			SECOUND-NUMBER:
+			<input type="number" name="s_number" id="s" class="form-control">
+			<br>
+			</form>
+			<button onclick="addition()"> Click To Add </button>
+			<h3 id="r"></h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
